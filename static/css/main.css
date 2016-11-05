@@ -1,0 +1,25 @@
+body{overflow: hidden; width: 100%; min-height: 100%; height: 100%; margin:0; padding:0; font-size: 1.5em;}
+.main-wrapper{width:100%; top:0; left:0; right: 0; bottom:0; min-height: 100%; height: 100%; max-height: 100%; overflow:hidden; margin:0; padding:0;}
+.clear{display: block; clear: both; width: 100%; margin:0; padding:0;}
+.clear-10{height: 10px;}
+.sidebar, .list-container{display: inline-block; min-height: 100%; height: 100%; max-height: 100%; margin:0; padding:0;}
+.sidebar{background: #2f3235;}
+.sidebar a{color:#ddd;}
+.sidebar a:hover{text-decoration: none; background: #e52325;}
+.sidebar li a{display: block; width: 100%; padding: 10px 0;}
+.sidebar li span{margin: 0 10px;}
+.list-container{border-right: 1px solid #ddd; overflow:hidden; padding-top: 30px;}
+.list-container .input-group{width: 100%; clear: both; margin:0; padding:0; clear: both; position: absolute; top:0;}
+.list-container .input-group input{border-radius:0; border-left: none; border-top: none;}
+.list-container .input-group input:hover{color: #e52325;}
+.list-container .input-group input:focus{border-color:#ccc; box-shadow: none;}
+.list-container .input-group .btn{border-radius: 0; border-top: none; border-right: none; margin-top: -1px;}
+.list-container .input-group .btn:hover{background: #fff; border-color: #ccc; color: #e52325;}
+.list-container a{color: inherit; display: block; clear: both; border-bottom: 1px solid #ccc; padding: 10px 0 15px 0; margin:0;}
+.list-container a:hover{text-decoration: none; border-color:#e52325;}
+.list-container ul li span{display: inline-block; width: 50px; text-align: center;}
+.list-container ul li h2{display: inline-block; font-size: 1.25em; font-weight: 900;}
+.list-container ul li p{display: inline-block; margin-left: 50px; color: #9a9a9a;}
+.main-container{display: inline-block; min-height: 100%; height: 100%; max-height: 100%; overflow-x: hidden; overflow-y: scroll; margin:0; padding:0;}
+.toolbar{min-height: 100%; height: 100%; max-height: 100%; border-left: 1px solid #ccc; background: #fff; z-index: 10; top:0; right: 0; position: fixed; width: 50px;}
+.toolbar a{width:100%; height: 50px; border-bottom: 1px solid #ccc; text-align: center; line-height: 50px; margin:0; padding:0;}
