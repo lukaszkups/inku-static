@@ -4,12 +4,12 @@ body{overflow: hidden; width: 100%; min-height: 100%; height: 100%; margin:0; pa
 .clear-10{height: 10px;}
 .clear-50{height: 50px;}
 .sidebar, .list-container{display: inline-block; min-height: 100%; height: 100%; max-height: 100%; margin:0; padding:0;}
-.sidebar{background: #2f3235;}
+.sidebar{background: #2f3235; min-width: 160px;}
 .sidebar a{color:#ddd;}
 .sidebar a:hover{text-decoration: none; background: #e52325;}
 .sidebar li a{display: block; width: 100%; padding: 10px 0;}
 .sidebar li span{margin: 0 10px;}
-.list-container{border-right: 1px solid #ddd; overflow:hidden; display: inline-block;}
+.list-container{border-right: 1px solid #ddd; overflow:hidden; display: inline-block; min-width: 320px;}
 .list-container .input-group{width: 100%; clear: both; margin:0; padding:0; clear: both; background-color: #fff; position: relative; z-index: 10;}
 .list-container .input-group input{border-radius:0; border-left: none; border-top: none;}
 .list-container .input-group input:hover{color: #e52325;}
