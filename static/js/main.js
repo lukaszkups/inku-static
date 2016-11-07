@@ -34,23 +34,28 @@
 
 	// helper function that binds click event to modal wrapper that closes modal
 	function bindModalWrapperClick(){
-		document.querySelector('.modal-wrapper').addEventListener('click', function(e){
-			e.preventDefault();
-			closeModal();
-		});
+		var wrapper = document.querySelector('.modal-wrapper');
+		if(wrapper){
+			wrapper.addEventListener('click', function(e){
+				e.preventDefault();
+				closeModal();
+			});
+		}else{
+			console.warn('Modal wrapper DOM element not found.');
+		}
 	}
 	bindModalWrapperClick();
+
+	// bind info-button click to show modal
+	document.getElementById('info-button').addEventListener('click', function(e){
+		e.preventDefault();
+		openModal('info-modal');
+	});
 
 	// nice scroll plugin initialization
 	$('.list-container, .categories').niceScroll({
 		cursorcolor: "#e52325",
 		cursorborder: "none",
 		cursorborderradius: 0
-	});
-
-	// bind info-button click to show modal
-	document.getElementById('info-button').addEventListener('click', function(e){
-		e.preventDefault();
-		openModal('info-modal');
 	});
 })();
